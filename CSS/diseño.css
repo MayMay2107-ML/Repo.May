@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+body {
+    background-image: url(descargar\ \(2\).jpg);
+    color: #ffd8d8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 30px clamp(20px, 4vw, 50px); 
+}
+
+.contenedor-principal {
+    width: 100%;
+    background-color: #3d231d; 
+    border-radius: 24px;       
+    overflow: visible;         
+    padding: 0 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: #3d231d;
+    overflow: visible;
+}
+
+.barraSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.marcaSuperior {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #c5978f;
+}
+
+.lineaDivisoraInicio {
+    width: 100%;
+    height: 4px; 
+    background-color: #d19f9f; 
+}
+
+.enlaces {
+    background-color: #3d231d;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: clamp(15px, 3vw, 30px); 
+    padding: 0px 10px !important; 
+    height: 25px !important;
+    margin-top: 0px;
+    margin-bottom: 0 !important;
+}
+
+.enlaces a {
+    color: #c5978f;
+    text-decoration: none;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    text-transform: lowercase;
+    transition: color 0.3s;
+    display: inline-block !important;
+    line-height: 50px !important; 
+    height: 50px !important;
+    vertical-align: middle !important;
+}
+
+.enlaces a:hover {
+    color: #865757;
+}
+
+.footer {
+    background-color: #1f110e;
+    color: #8c6a64;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8rem;
+    margin-top: 30px; 
+    border-radius: 24px; 
+}
+
+.bloquePresentacion {
+    background-color: #d19f9f; 
+    display: flex;
+    justify-content: center; 
+    padding: 25px 40px !important; 
+    width: 100%; 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin: 0 auto;
+}
+
+
+.marcoPerfil {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    border: 5px solid #3d231d;
+    flex-shrink: 0; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); 
+    margin-top: -10px;
+    margin-bottom: -45px; 
+    position: relative;   
+    z-index: 10;       
+}
+
+.organizadorBloquePresentacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 850px; 
+    gap: 40px; 
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #3d231d;
+    display: block;
+}
+
+.textoPresentacion {
+    text-align: left; 
+    min-width: 280px;
+}
+
+.eclatdor h1 {
+    font-size: clamp(2.3rem, 4vw, 3.2rem); 
+    font-weight: 300;
+    color: #f7e1e1;
+    margin-bottom: 5px;
+}
+
+.eslogan {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #4a2c25;
+}
+
+.galeria {
+    flex: 1;
+    background-color: #d19f9f; 
+    padding: 50px clamp(20px, 5vw, 60px);
+    width: 100%;
+    border-radius: 24px !important; 
+    margin: 25px 0 0 0 !important; 
+}
+
+.organizadorTarjetas {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); 
+    gap: 40px;
+}
+
+.tarjetas {
+    background-color: #3d231d; 
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+}
+
+.cajaTarjetas {
+    background-color: #0c0706;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotosServicios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.textoTarjetas {
+    color: #c5978f;
+    font-size: 1.05rem;
+    padding-left: 5px;
+}
+
+/* Pagina de Bienvenida */
+
+.bloquePresentacion-unico {
+    flex: 1;
+    background-color: #d19f9f; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 45px 40px; 
+    width: 100%; 
+    border-radius: 24px; 
+    margin: 25px auto 0 auto !important;
+}
+
+.organizador-inicio-canva {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    gap: 40px; 
+}
+
+.cartel-bienvenida {
+    color: #f7e1e1;
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-texto-bienvenida {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parrafo-bienvenida {
+    color: #4a2c25; 
+    font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+    line-height: 1.7;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
