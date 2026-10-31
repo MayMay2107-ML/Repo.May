@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(descargar\ \(2\).jpg);
+    background-image: url('../Imagenes/descargar (2).jpg');
     color: #ffd8d8;
     display: flex;
     flex-direction: column;
