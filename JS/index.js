@@ -7,7 +7,7 @@ const datosServicios = {
   polygel: {
     titulo: "Poly Gel",
     imagen: "../Imagenes/WhatsApp Image 2026-11-12 at 22.23.05.jpeg",
-    descripcion: "Sistema híbrido que combina la resistencia del acrílico con la ligereza del gel. Permite esculpir y dar estructura resistente con un acabado resistente."
+    descripcion: "Sistema híbrido que combina la resistencia del acrílico con la ligereza del gel. Permite esculpir y dar estructura resistente."
   },
   semipermanente: {
     titulo: "Esmaltado Semipermanente",
