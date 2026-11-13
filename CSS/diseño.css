@@ -144,7 +144,7 @@ body {
 .eclatdor h1 {
     font-size: clamp(2.3rem, 4vw, 3.2rem); 
     font-weight: 300;
-    color: #f7e1e1;
+    color: #ece3b1;
     margin-bottom: 5px;
 }
 
@@ -237,7 +237,7 @@ body {
 }
 
 .cartel-bienvenida {
-    color: #f7e1e1;
+    color: #4a2c25;
     font-size: clamp(1.4rem, 3.5vw, 2.2rem);
     font-weight: 800;
     letter-spacing: 1px;
@@ -257,6 +257,7 @@ body {
     line-height: 1.7;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    
 }
 
 /* Pagina del contacto*/
@@ -295,27 +296,189 @@ body {
 /* Pagina Sobre mi*/
 
 .organizadorBloquePresentacion-sobreMi {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
-    width: 100%; 
-    gap: 40px; 
-    box-sizing: content-box;
-} 
-    
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 35px;
+  box-sizing: border-box;
+}
+
 .marcoPerfil-sobreMi {
-    width: 320px; 
-    height: 320px; 
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid #3d231d;
-    flex-shrink: 0; 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);    
+  width: clamp(200px, 30vw, 300px);
+  height: clamp(200px, 30vw, 300px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #3d231d;
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.perfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-bienvenida {
+  flex: 1 1 320px;
+  max-width: 100%;
+}
+
+.parrafo-inferior-sobre-mi {
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
 .texto-presentacion-sobreMi {
-    text-align: left; 
-    flex-grow: 1;
-    max-width: 600px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.parrafo-bienvenida-sobre-mi,
+.parrafo-inferior-sobre-mi {
+  color: #4a2c25;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  line-height: 1.7;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+/* Pagina servicios*/
+
+.contenedorServicios {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.tarjetaServicio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tarjetaServicio.invertido {
+  flex-direction: row-reverse;
+}
+
+.circuloServicio {
+  width: clamp(180px, 26vw, 240px);
+  height: clamp(180px, 26vw, 240px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #3d231d;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circuloServicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.infoServicio {
+  flex: 1 1 260px;
+  text-align: center;
+  color: #3d231d;
+  font-family: 'Playfair Display', serif;
+}
+
+.infoServicio h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.verMas {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.verMas:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: #865757;
+  color: #3d231d;
+  padding: 35px 25px 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Playfair Display', serif;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ece3b1;
+}
+
+.modalClose:hover {
+  color: #3c1e1e;
+}
+
+.modalCirculo {
+  width: clamp(130px, 35vw, 170px);
+  height: clamp(130px, 35vw, 170px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #3d231d;
+  margin: 0 auto 20px auto;
+}
+
+.modalCirculo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modalContent h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 12px;
+}
+
+.modalContent p {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  line-height: 1.6;
 }
