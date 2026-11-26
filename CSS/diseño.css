@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 30px clamp(20px, 4vw, 50px); 
+    padding: 30px 50px; 
 }
 
 .contenedor-principal {
@@ -53,7 +53,7 @@ body {
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: center; 
-    gap: clamp(15px, 3vw, 30px); 
+    gap: 30px; 
     padding: 10px 10px; 
     margin-bottom: 0;
     height: 10px;
@@ -62,7 +62,7 @@ body {
 .enlaces a {
     color: #c5978f;
     text-decoration: none;
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-size: 1.1rem;
     text-transform: lowercase;
     transition: color 0.3s;
     display: inline-block;
@@ -142,7 +142,7 @@ body {
 }
 
 .eclatdor h1 {
-    font-size: clamp(2.3rem, 4vw, 3.2rem); 
+    font-size: 3.2rem; 
     font-weight: 300;
     color: #ece3b1;
     margin-bottom: 5px;
@@ -165,7 +165,7 @@ body {
 .galeria {
     flex: 1;
     background-color: #d19f9f; 
-    padding: 50px clamp(20px, 5vw, 60px);
+    padding: 50px 60px;
     width: 100%;
     border-radius: 24px; 
     margin: 25px 0 0 0; 
@@ -238,7 +238,7 @@ body {
 
 .cartel-bienvenida {
     color: #4a2c25;
-    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-size: 2.2rem;
     font-weight: 800;
     letter-spacing: 1px;
     text-align: center;
@@ -253,7 +253,7 @@ body {
 
 .parrafo-bienvenida {
     color: #4a2c25; 
-    font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+    font-size: 1.8rem;
     line-height: 1.7;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -309,8 +309,8 @@ body {
 }
 
 .marcoPerfil-sobreMi {
-  width: clamp(200px, 30vw, 300px);
-  height: clamp(200px, 30vw, 300px);
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #3d231d;
@@ -343,7 +343,7 @@ body {
 .parrafo-bienvenida-sobre-mi,
 .parrafo-inferior-sobre-mi {
   color: #4a2c25;
-  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  font-size: 1.3rem;
   line-height: 1.7;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -374,8 +374,8 @@ body {
 }
 
 .circuloServicio {
-  width: clamp(180px, 26vw, 240px);
-  height: clamp(180px, 26vw, 240px);
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #3d231d;
@@ -393,18 +393,18 @@ body {
 .infoServicio {
   flex: 1 1 260px;
   text-align: center;
-  color: #3d231d;
+  color: #ece3b1;
   font-family: 'Playfair Display', serif;
 }
 
 .infoServicio h2 {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: 3.2rem;
   font-weight: 400;
   margin-bottom: 8px;
 }
 
 .verMas {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: 1.2rem;
   cursor: pointer;
   opacity: 0.9;
   transition: opacity 0.3s;
@@ -458,8 +458,8 @@ body {
 }
 
 .modalCirculo {
-  width: clamp(130px, 35vw, 170px);
-  height: clamp(130px, 35vw, 170px);
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #3d231d;
@@ -474,11 +474,77 @@ body {
 }
 
 .modalContent h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 2rem;
   margin-bottom: 12px;
 }
 
 .modalContent p {
-  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  font-size: 1.1rem;
   line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    .enlaces {
+        gap: 15px;
+    }
+
+    .enlaces a {
+        font-size: 0.95rem;
+    }
+
+    .eclatdor h1 {
+        font-size: 2.3rem;
+    }
+
+    .galeria {
+        padding: 50px 20px;
+    }
+
+    .cartel-bienvenida {
+        font-size: 1.4rem;
+    }
+
+    .parrafo-bienvenida {
+        font-size: 1.3rem;
+    }
+
+    .marcoPerfil-sobreMi {
+        width: 200px;
+        height: 200px;
+    }
+
+    .parrafo-bienvenida-sobre-mi,
+    .parrafo-inferior-sobre-mi {
+        font-size: 1.05rem;
+    }
+
+    .circuloServicio {
+        width: 180px;
+        height: 180px;
+    }
+
+    .infoServicio h2 {
+        font-size: 2.2rem;
+    }
+
+    .verMas {
+        font-size: 1rem;
+    }
+
+    .modalCirculo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .modalContent h3 {
+        font-size: 1.5rem;
+    }
+
+    .modalContent p {
+        font-size: 0.95rem;
+    }
 }
